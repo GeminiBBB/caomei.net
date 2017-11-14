@@ -1,0 +1,194 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background:#CCCCCC;
+}
+#denglu{
+   opacity: 1;
+    width: 403px;
+    height: 600px;
+    background: white;
+    margin: 156px auto;
+    border-radius: 5px;
+    position: relative;
+}
+#top_deng{
+    width: 403px;
+    height:84px;
+    ul{
+        width: 325px;
+        height: 57px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 24px;
+        border-bottom: 2px solid #6b3a87;
+        a:first-child{
+            color: #6b3a87;
+            width: 32px;
+            height: 55px;
+            display: block;
+            float: left;
+            line-height: 55px;
+            font-weight: 900;
+            margin-left: 75px;
+            border-bottom: 3px solid #6B3A87;
+        }
+        a:last-child{
+            color: #6b3a87;
+            width: 32px;
+            height: 55px;
+            display: block;
+            float: left;
+            line-height: 55px;
+            margin-left: 111px; 
+        }
+    }
+}
+//账号密码条
+#mima{
+    width: 365px;
+    height: 169px;
+//  background: pink;
+    margin: 0 auto;
+    input:first-child{
+        width: 325px;
+        height: 40px;
+        border: 1px solid #89619f;
+        font-size:18px ;
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+    input:nth-of-type(2){
+        width: 325px;
+        height: 40px;
+        margin-top: 15px;
+        font-size: 18px;
+        border: 1px solid #89619f;
+        margin-left: 20px;  
+    }
+    input::-webkit-input-placeholder{
+        color: #adadad;
+        font-size: 19px;
+        font-weight: 100;
+    }
+    span{
+        font-size: 12px;
+        color: #662d91;
+        float: right;
+        margin-right: 18px;
+        margin-top:5px
+    }
+    b{
+        display: none;
+        font-size: 15px;
+        font-weight: 900;
+        color: red;
+    }
+}
+//登录按钮
+#button_denglu{
+    width: 365px;
+    height: 100px;
+    margin: 0 auto;
+//  background: pink;
+    input{
+        width: 97px;
+        height: 42px;
+        background: #f22971;
+        color: white;
+        font-size: 18px;
+        margin-left: 125px;
+        border-style: none;
+        border-radius: 5px;
+    }
+    span{
+        width: 20px;
+        height: 20px;
+        display: block;
+        border: 1px solid #6b3a87;
+        border-radius: 5px;
+        float: left;
+        margin-top: 23px;
+        margin-right:8px ;
+        margin-left: 117px;
+        background: url(../img/jinglengtu.png) -324px -570px no-repeat;
+    }
+    li{
+         margin-top: 23px;
+         color: #414141;
+    }
+}
+//紫色快
+#purple_kuai{
+    width: 403px;
+    height: 113px;
+    background: #6b3a87;
+    float: left;
+    border-radius:0 0 0 8px;
+}
+#purple_zhong{
+    width: 90px;
+    height: 72px;
+//  background: skyblue;
+    margin-left: 27px;
+    margin-top:27px;
+    float: left;
+    span{
+        display: block;
+       line-height: 72px;
+       font-size: 18px;
+       color: white;
+       font-weight: 900;
+    } 
+}
+#purple_center{
+    width: 135px;
+    height: 75px;
+    float: left;
+//  background: red;
+    margin-top: 17px;
+    li{
+        float: left;
+        font-size: 14px;
+        color: white;
+        margin-top: 5px;
+        span{
+            float: left;
+            width: 20px;
+            height: 17px;
+            display: block;
+            margin-right: 3px;
+            margin-top:5px;
+            background: url(../img/jinglengtu.png) -356px -545px no-repeat;
+        }
+    }
+}
+#purple_rightTou{
+    width: 45px;
+    height: 72px;
+//  background: wheat;
+    float: left;
+    margin-top: 20px;
+    a{
+        width: 20px;
+        height: 39px;
+        display: block;
+        margin-top: 20px;
+        background: url(../img/jinglengtu.png) -357px -504px no-repeat;
+    }
+}
+#chahao{
+    width: 36px;
+    height: 36px;
+//  background: url(../img/chahao.png) no-repeat;
+    position: absolute;
+    top:-14px;
+    right:-19px;
+    img{    border-radius:18px ;}
+
+}
+

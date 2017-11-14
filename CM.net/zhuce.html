@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
+	</head>
+	<body>
+		<!--上方文字-->
+		<div id="denglu">
+			<div id="top_deng">
+				<ul>
+					<a href="denglu.html">登入</a>
+					<a href="zhuce.html">注册</a>
+				</ul>
+			</div>
+			<!--表单框-->
+			<div id="mima">
+				<input type="text" name="txt" id="txt1" placeholder="名字"/><b>请输入名字</b>
+				<input type="text" name="txt" id="txt2" placeholder="姓氏"/><b>请输入姓氏</b>
+				<input type="text" name="txt" id="txt3" placeholder="邮箱"/><b>请输入邮箱</b>
+				<span>我更换了电邮地址</span>
+				<input type="text" name="txt" id="txt4" placeholder="密码"/><b>请输入密码</b>
+				<input type="text" name="txt" id="txt5" placeholder="请再次输入密码"/><b>请再次输入密码</b>
+			</div>
+			<!--登录按钮-->
+			<div id="button_denglu">
+				
+				<li><span></span><h6>&nbsp;&nbsp;订阅草莓网独家电邮优惠</h6></li></br>
+				
+				<li><span></span><h6>&nbsp;&nbsp;我同意 <a href="#">私隐条约</a> 及<a href="#">服务条款</a></h6></li><br />
+				<a href="javascript:;"><input type="button" name="btn" id="btn1" value="注册" /></a>
+			</div>
+						<!--黑叉号-->
+			<div id="chahao">
+				<a href="#"><img src="img/chahao.png"/></a>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var oInput = document.getElementsByName("txt");
+			var oSpan = document.getElementsByTagName("b");
+			var oBtn=document.getElementById("btn1")
+			oInput[0].onblur = function (){
+				var reg = /^[a-z0-9]{6,12}$/;
+				if(oInput[0].value == ""){
+					oSpan[0].style.display="inline-block";
+				}else if(reg.test(oInput[0].value) == false){
+					oSpan[0].innerHTML="名字不可用！";
+					oSpan[0].style.display="inline-block";
+					oSpan[0].style.color="red";
+				}else{
+					oSpan[0].style.display="none";
+				}
+			}
+			oInput[1].onblur = function (){
+				var reg = /^[a-z0-9]{6,12}$/;
+				if(oInput[1].value == ""){
+					oSpan[1].style.display="inline-block";
+				}else if(reg.test(oInput[1].value) == false){
+					oSpan[1].innerHTML="姓氏不可用！";
+					oSpan[1].style.display="inline-block";
+					oSpan[1].style.color="red";
+				}else{
+					oSpan[1].style.display="none";
+				}
+			}
+			oInput[2].onblur = function (){
+				var reg = /^\w+@(qq)|(163)|(126){1}(.com)|(.cn)$/;
+				if(oInput[2].value == ""){
+					oSpan[2].style.display="inline-block";
+				}else if(reg.test(oInput[2].value) == false){
+					oSpan[2].innerHTML = "地址不可用！"
+					oSpan[2].style.color="red";
+					oSpan[2].style.display="inline-block";
+				}else{
+					oSpan[2].style.display="none";
+				}
+			}
+			oInput[3].onblur = function (){
+				var reg = /^[^/\\\u4e00-\u9fa5]{8,16}$/;
+				if(oInput[3].value == ""){
+					oSpan[3].style.display="inline-block";
+					oUl.style.display="none";
+				}else if(reg.test(oInput[3].value) == false){
+					oSpan[3].innerHTML = "密码不可用！"
+					oSpan[3].style.color="red";
+					oSpan[3].style.display="inline-block";
+				}else{
+					oSpan[3].style.display="none";
+					oUl.style.display="none";
+				}
+			}
+				oInput[4].onblur = function (){
+				if(oInput[4].value == ""){
+					oSpan[4].style.display="inline-block";
+				}else if(oInput[4].value != oInput[3].value){
+					oSpan[4].innerHTML="密码输入不一致"
+					oSpan[4].style.color="red";
+					oSpan[4].style.display="inline-block";
+				}else{
+					oSpan[4].style.display="none";
+				}
+			}
+				oBtn.onclick = function(){
+				for(var i=0;i<oInput.length;i++){
+					if(oInput[i].value=="" || (oSpan[i].style.display=="inline-block")){
+						//oSpan[i].style.display=="inline-block";
+						alert("请将信息补充完整！");
+						return;
+					}
+				} 
+				window.open("index.html");
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,190 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #ccc;
+}
+#denglu{
+    width: 403px;
+    height: 600px;
+    background: white;
+    margin: 156px auto;
+    border-radius: 5px;
+    position: relative;
+}
+#top_deng{
+    width: 403px;
+    height:84px;
+    ul{
+        width: 325px;
+        height: 57px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 24px;
+        border-bottom: 2px solid #6b3a87;
+        a:last-child{
+            color: #6b3a87;
+            width: 32px;
+            height: 55px;
+            display: block;
+            float: left;
+            line-height: 55px;
+            font-weight: 900;
+            margin-left: 75px;
+            border-bottom: 3px solid #6B3A87;
+        }
+        a:first-child{
+            color: #6b3a87;
+            width: 32px;
+            height: 55px;
+            display: block;
+            float: left;
+            line-height: 55px;
+            margin-left: 111px; 
+        }
+    }
+}
+//五个input
+#mima{
+    width: 365px;
+    height:350px;
+//  background: pink;
+    margin: 0 auto;
+    input:first-child{
+        width: 325px;
+        height: 40px;
+        border: 1px solid #89619f;
+        font-size:18px ;
+        margin-top: 35px;
+        margin-left: 20px;
+    }
+    input:nth-of-type(2){
+        width: 325px;
+        height: 40px;
+        margin-top: 5px;
+        font-size: 18px;
+        border: 1px solid #89619f;
+        margin-left: 20px;  
+    }
+    input:nth-of-type(3){
+        width: 325px;
+        height: 40px;
+        margin-top: 5px;
+        font-size: 18px;
+        border: 1px solid #89619f;
+        margin-left: 20px;  
+    }
+    input:nth-of-type(4){
+        width: 325px;
+        height: 40px;
+        margin-top: 5px;
+        font-size: 18px;
+        border: 1px solid #89619f;
+        margin-left: 20px;  
+    }
+    input:nth-of-type(5){
+        width: 325px;
+        height: 40px;
+        margin-top: 5px;
+        font-size: 18px;
+        border: 1px solid #89619f;
+        margin-left: 20px;  
+    }
+    input::-webkit-input-placeholder{
+        color: #adadad;
+        font-size: 19px;
+        font-weight: 100;
+    }
+    span{
+        font-size: 12px;
+        color: #662d91;
+        float: right;
+        margin-right: 18px;
+        margin-top:5px
+    }
+    b{
+        display: none;
+        font-size: 15px;
+        font-weight: 900;
+        color: red;
+    }
+}
+//对勾按钮
+#button_denglu{
+    width: 365px;
+    height: 110px;
+    margin: 30px auto;
+// display: block;
+//  background: pink;
+    input{
+        width: 97px;
+        height: 42px;
+        background: #f22971;
+        color: white;
+        font-size: 18px;
+        margin-left: 85px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    }
+    li:nth-of-type(1){
+        width: 390px;
+         color: #414141;
+         display: block;
+         
+             span{
+        width: 20px;
+        height: 20px;
+        display: block;
+        border: 1px solid #6b3a87;
+        border-radius: 5px;
+        float: left;
+        margin-left: 20px;
+        background: url(../img/jinglengtu.png) -324px -570px no-repeat;
+    }
+    h6{
+        float: left;
+        font-size: 15px;
+        margin-top: 1px;
+    }
+    }
+    li:nth-of-type(2){
+        display: block;
+        width: 390px;
+         color: #414141;
+         margin-top: 12px;
+         span{
+        width: 20px;
+        height: 20px;
+        display: block;
+        border: 1px solid #6b3a87;
+        border-radius: 5px;
+        margin-left: 20px;
+        float: left;
+
+    }
+    h6{
+    float: left;
+    font-size: 15px;
+    margin-top:1px;
+    a{
+        color:#662d91;
+    }
+}
+    }
+    //黒叉号
+    #chahao{
+    width: 36px;
+    height: 36px;
+//  background: url(../img/chahao.png) no-repeat;
+    position: absolute;
+    top:-14px;
+    right:-19px;
+    img{    border-radius:18px ;}
+
+}

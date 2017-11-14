@@ -1,0 +1,16 @@
+$.getJSON("inde.json",function(data){
+	$(data).each(function(index,value){
+		if(value.price){
+			$(".price").eq(index).append("<i>￥</i>"+value.price)
+		}
+		if(value.mark){
+			$(".mark").eq(index).append(value.mark)
+		}
+		if(value.Pid){
+			$(".Pid").eq(index).append(value.Pid)
+		}
+		if(value.zhe){
+			$(".zhe").eq(index).append("<i>￥</i>"+value.zhe)
+		}
+	})
+})

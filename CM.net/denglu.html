@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/denglu.css"/>
+	</head>
+	<body>
+		<div id="denglu">
+			<div id="top_deng">
+				<ul>
+					<a href="denglu.html">登入</a>
+					<a href="zhuce.html">注册</a>
+				</ul>
+			</div>
+			<!--密码条-->
+			<div id="mima">
+				<input type="text" name="txt" id="txt1" placeholder="邮箱"/><b>请输入邮箱</b>
+				
+				<input type="text" name="txt" id="txt2" placeholder="密码"/><b>请输入密码</b>
+				<span>忘记密码</span>
+			</div>
+			<!--登录按钮-->
+			<div id="button_denglu">
+				<a href="javascript:;"><input type="button" name="btn" id="btn1" value="登入"/></a>
+				<span></span>
+				<li>保持登录状态</li>
+			</div>
+			<!--紫色块-->
+			<div id="purple_kuai"> 
+				<div id="purple_zhong">
+					<span id="">立即登录</span>
+				</div>
+				<div id="purple_center">
+					<ul>
+						<li><span></span>一键重订</li>
+						<li><span></span>订单查询</li>
+						<li><span></span>独家优惠</li>
+					</ul>
+				</div>
+				<div id="purple_rightTou">
+				<a href="#"></a>
+			</div>
+			</div>
+			<!--黑叉号-->
+			<div id="chahao">
+				<a href="#"><img src="img/chahao.png"/></a>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var oInput = document.getElementsByName("txt");
+			var oSpan = document.getElementsByTagName("b");
+			var oBtn=document.getElementById("btn1")
+			oInput[0].onblur = function (){
+				var reg = /^\w+@(qq)|(163)|(126){1}(.com)|(.cn)$/;
+				if(oInput[0].value == ""){
+					oSpan[0].style.display="inline-block";
+				}else if(reg.test(oInput[0].value) == false){
+					oSpan[0].innerHTML = "地址不可用！"
+					oSpan[0].style.color="red";
+					oSpan[0].style.display="inline-block";
+				}else{
+					oSpan[0].style.display="none";
+				}
+			}
+			oInput[1].onblur = function (){
+				var reg = /^[^/\\\u4e00-\u9fa5]{8,16}$/;
+				if(oInput[1].value == ""){
+					oSpan[1].style.display="inline-block";
+					oUl.style.display="none";
+				}else if(reg.test(oInput[1].value) == false){
+					oSpan[1].innerHTML = "密码不可用！"
+					oSpan[1].style.color="red";
+					oSpan[1].style.display="inline-block";
+				}else{
+					oSpan[1].style.display="none";
+					oUl.style.display="none";
+				}
+			}
+			oBtn.onclick = function(){
+				for(var i=0;i<oInput.length;i++){
+					if(oInput[i].value=="" || (oSpan[i].style.display=="inline-block")){
+						//oSpan[i].style.display=="inline-block";
+						alert("请将信息补充完整！");
+						return;
+					}
+				} 
+				window.open("index1.html");
+//alert("正确")
+			}
+		</script>
+		<script src="js/jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
