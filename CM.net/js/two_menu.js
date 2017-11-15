@@ -8,7 +8,9 @@
 var oimg=document.getElementById("top_bg");
 var oshop=document.getElementById("shop");
 var odianji=document.getElementById("dianji");
+var odianji10=document.getElementById("dianji10");
 var otwoJi_menu=document.getElementById("twoJi_menu");
+var otwoJi_menu2=document.getElementById("houtianjia");
 var odianji1=document.getElementById("dianji1");
 var odianji2=document.getElementById("dianji2");
 var odianji3=document.getElementById("dianji3");
@@ -30,6 +32,12 @@ odianji.onmouseover=function(){
 }
 odianji.onmouseout=function(){
 	otwoJi_menu.style.display="none";
+}
+odianji10.onmouseover=function(){
+	otwoJi_menu2.style.display="block";
+}
+odianji10.onmouseout=function(){
+	otwoJi_menu2.style.display="none";
 }
 //1
 odianji1.onmouseover=function(){

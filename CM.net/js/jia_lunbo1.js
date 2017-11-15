@@ -5,10 +5,10 @@ window.onload = function () {
 		oRightBtn 		= $('#right-btn'),
 		oList			= $('#box #list'),
 		aListLi			= $("#box ul li"),
-		iPerWidth		= aListLi[0].offsetWidth,
+		iPerWidth		= aListLi.offsetWidth,
 		oBtnList		= $('#btn-list'),
 		aBtnListA		= Array.from(oBtnList.children);
-		console.log(typeof(oList))
+		console.log(typeof(aListLi))
 	// 标识图片的下标
 	let iIndex = 0;
 	// 表示按钮的下标
@@ -35,7 +35,7 @@ window.onload = function () {
 	oList.innerHTML += aListLi[0].outerHTML;
 
 	// 改变ul的宽度
-	oList.style.width = 1100+"px";
+	oList.style.width = iPerWidth * aListLi.length+"px";
 
 
 	// 点击左侧按钮
