@@ -1,9 +1,9 @@
 window.onload = function (){
-	let oBox      = $('banner');
-	let oList     = $('banner_ul');
+	let oBox      = $id('banner');
+	let oList     = $id('banner_ul');
 	let oLi       = oList.children;
 	let iperWidth = oLi[0].offsetWidth;
-	let oCircle   = $('lunbodian');
+	let oCircle   = $id('lunbodian');
 	let lis       =oCircle.children;
 	let l        = lis.length;
 	let now = 0;
@@ -70,5 +70,8 @@ window.onload = function (){
 //$('#dianji').mouseout(function(){
 //	$('#twoJi_menu').css('display','none');
 //});
+
+	
+	
 	
 }

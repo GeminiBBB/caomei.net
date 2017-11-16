@@ -1016,7 +1016,8 @@
 }
 
 #list {
-  position: relative;
+
+  left: 0;
   width: 6000px;
 }
 #list li {

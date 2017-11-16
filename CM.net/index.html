@@ -2,17 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<script src="js/jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
-		
-        <script src="js/lunbo.js" type="text/javascript" charset="utf-8"></script>
-        <script src="js/lunbo2.js" type="text/javascript" charset="utf-8"></script>
-        
-        <!--<script src="js/cookie.js" type="text/javascript" charset="utf-8"></script>-->
-        <!--<script src="js/load_json.js" type="text/javascript" charset="utf-8"></script>-->
-        <!--<script src="inde.json" type="text/javascript" charset="utf-8"></script>-->
 	</head>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/lunbo.js"></script>
+    <script src="js/lunbo2.js"></script>
+  
 	<body>
 		<!--顶部-->
 		<div id="top_bg">
@@ -295,7 +291,7 @@
 		
 		<!--banner-->
 		
-		<div id="banner">
+		<div id="banner" class="Louti">
 			<ul id="banner_ul">
 				<li><a href="javascript:;"><img src="img/71.jpg"></a></li>
 				<li><a href="javascript:;"><img src="img/72.jpg"></a></li>
@@ -323,16 +319,18 @@
 			<li>●</li>
 			<li>●</li>
 		</ul>
+		<!--楼梯-->
+			
 		<!--草莓网今日秒杀-->
-		<div id="miaosha">
-			<div id="leftheng"></div>
+		<div id="miaosha" >
+			<div id="leftheng" class="Louti"></div>
 			<h1> 草 莓 网 今 日 秒 杀 </h1>
 			<div id="rightheng"></div>
 		</div>
-		<!--仅剩时间-->
-		<div id="sheng_time">
-			
-		</div>
+		<!--仅剩时间-->		 
+<div class="time"> 
+	<span id="LeftTime"></span>
+</div>
 		<span id="xuan_number">
 			每件订单最多可购买三件。
 		</span>
@@ -523,8 +521,8 @@
 			<a href="#"><img src="img/fanhui.png"/></a>
 		</div>
 		<!--尖货推荐-->
-		<div id="top_product">
-			<div id="top_waibao">
+		<div id="top_product" >
+			<div id="top_waibao" class="Louti">
 		    <div id="miaosha">
 			     <div id="left_heng"></div>
 			     <h1> 草 莓 网 尖 货 推 荐 </h1>
@@ -627,9 +625,9 @@
 			</div>
 			</div>
 		</div>
-		<!--五折专场-->
+		<!--<!--五折专场-->-->
 		<div id="center_wuzhe">
-			<div id="miaosha1">
+			<div id="miaosha1" class="Louti">
 			<div id="leftheng1"></div>
 			<h1> 五  折  专  场  </h1>
 			<div id="rightheng1"></div>
@@ -743,8 +741,8 @@
 			</div>
 		</div>
 		<!--热卖榜-->
-				<div id="center_wuzhe">
-			<div id="miaosha1">
+				<div id="center_wuzhe" >
+			<div id="miaosha1" class="Louti">
 			<div id="leftheng1"></div>
 			<h1> 热  销  榜  </h1>
 			<div id="rightheng1"></div>
@@ -858,7 +856,7 @@
 			</div>
 		</div>
 		<!--新品登场-->
-			<div id="center_wuzhe">
+			<div id="center_wuzhe" class="Louti">
 			<div id="miaosha1">
 			<div id="leftheng1"></div>
 			<h1> 新  品  登  场  </h1>
@@ -974,7 +972,7 @@
 		</div>
 		
 		<!--关注我们-->
-		<div id="attention_us">
+		<div id="attention_us" class="Louti">
 			<div id="attention_us_left">
 				<h5>关注我们</h5>
 		<!--搜索框-->
@@ -1084,7 +1082,6 @@
 			</div>
 		</div>
 		</div>
-		
 		<!--底部评论-->
 		<div id="waibukuang">
 			<div id="left_pinglun">
@@ -1211,19 +1208,54 @@
 		        </div>
 			</div>
 		</div>
-		
+		<!--楼梯-->
+		<div id="LoutiNav">
+			<ul>
+				<li>1F <span>品牌</span> </li>
+				<li>2F <span>秒杀</span> </li>
+				<li>3F <span>尖货</span> </li>
+				<li>4F <span>五折</span> </li>
+				<li>5F <span>热销</span> </li>
+				<li>6F <span>新品</span> </li>
+				<li>7F <span>联系</span> </li>
+				<li class="last">Top</li>
+			</ul>
+		</div>
 		<!--最下部的一块-->
-		<div id="biankuang">
+
+<div id="biankuang">
 			<div id="neibu_pink">
 				<p>隐私&安全 丨 使用条款</p>
 				<span>1998 - 2017 &copy; 香港草莓网版权专属</span>
 				<li>ICP证:京ICP备11007848号-1</li>
 			</div>
 		</div>
-		<!--<script src="js/jquery-1.10.1.js" type="text/javascript" charset="utf-8"></script>-->
+			<!--louti-->
+	
 		<script src="js/back_top.js" type="text/javascript" charset="utf-8"></script>
-		<!--<script src="js/fanhui.js" type="text/javascript" charset="utf-8"></script>-->
 		<script src="js/two_menu.js" type="text/javascript" charset="utf-8"></script>
-		<!--<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/louti.js" type="text/javascript" charset="utf-8"></script>
+		<!--倒计时-->
+		<script type="text/javascript">
+        	function FreshTime(){
+    var endtime=new Date("2017/11/20,12:20:12");//结束时间
+    var nowtime = new Date();//当前时间
+    var lefttime=parseInt((endtime.getTime()-nowtime.getTime())/1000); 
+    d=parseInt(lefttime/3600/24);
+    h=parseInt((lefttime/3600)%24);
+    m=parseInt((lefttime/60)%60);
+    s=parseInt(lefttime%60);
+ 
+    document.getElementById("LeftTime").innerHTML="仅剩:" + d+"d:"+h+"h:"+m+"m:"+ s +"s";
+    if(lefttime<=0){
+        document.getElementById("LeftTime").innerHTML="团购已结束";
+        clearInterval(sh);
+    }
+}
+    FreshTime();
+    var sh;
+    sh=setInterval(FreshTime,1000);
+        </script>
 	</body>
+	
 </html>

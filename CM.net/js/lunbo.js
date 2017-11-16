@@ -1,5 +1,5 @@
 
-function $(id){
+function $id(id){
 	return document.getElementById(id);
 }
 
@@ -44,5 +44,7 @@ function bufferMove(obj,oTarget,fn,ratio = 8){
 		}
 	},40);
 }
+
+
 
 

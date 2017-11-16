@@ -219,6 +219,61 @@
 				<li class="dian1">
 					<img src="img/cuxiao.png" />
 					<a href="#">促销活动</a>
+					<div id="houtianjia">
+						<div id="hou_shang">
+							<h5>所有特惠活动 ></h5>
+							<b>促销季强势来袭，低价   &nbsp;&nbsp;折扣 &nbsp;&nbsp;集合开抢！</b>
+						</div>
+						<div id="hou_xia">
+							<div id="xia_1">
+								<h5>促销活动</h5><br />
+								<b>每日精选</b><br />
+								<b>超值精选</b><br />
+								<b>榜单热卖</b><br />
+								<b>11.11狂欢</b><br />
+								<b>特卖专场</b><br />
+								<b>会发光的"果冻肌"</b><br />
+								<b>暖冬热品初公开</b><br />
+								<b>11月热卖榜单榜首TOP40</b><br />
+								<b>圣诞礼盒最全合辑</b><br />
+								<b>800款圣诞好礼精选</b><br />
+								<b>魅力秋冬</b><br />
+								<b>精品香水低价直击</b><br />
+								<b>全城热惠</b><br />
+								<b>浏览更多>></b>
+							</div>
+							<div id="xia_2">
+								<h5>美妆论坛</h5><br />
+								<b>玩转妆彩·最强草单</b><br />
+								<b>吸粉魔力大公开</b><br />
+								<b>肌肤问题诊疗室</b><br />
+							</div>
+							<div id="xia_3">
+								<h5>每月精选</h5><br />
+								<b>女士护肤</b><br />
+								<b>品牌彩妆</b><br />
+								<b>美发护发</b><br />
+								<b>女士香水</b><br />
+								<b>男士护肤</b><br />
+								<b>男士香水</b><br />
+							</div>
+							<div id="xia_4">
+								<h5>礼盒套装</h5><br />
+								<b>护肤组合</b><br />
+								<b>彩妆组合</b><br />
+								<b>秀发狐狸组合</b><br />
+								<b>香水组合</b><br />
+								<b>男士护理组合</b><br />
+								<b>男士香水组合</b><br />
+							</div>
+							<div id="xia_5">
+								<p>超值精选</p>
+								<a></a>
+								<p>榜单热卖</p>
+								<a></a>
+							</div>
+						</div>
+					</div>
 				</li>
 				<li class="dian1">
 					<img src="img/xinpin.png"/>
@@ -241,17 +296,25 @@
 		
 		<div id="banner">
 			<ul id="banner_ul">
-				<li><a href="javascript:;"><img src="img/1.jpg"></a></li>
-				<li><a href="javascript:;"><img src="img/2.png"></a></li>
-				<li><a href="javascript:;"><img src="img/3.jpg"></a></li>
-				<li><a href="javascript:;"><img src="img/4.jpg"></a></li>
-				<li><a href="javascript:;"><img src="img/5.jpg"></a></li>
-				<li><a href="javascript:;"><img src="img/6.jpg"></a></li>
-				<li><a href="javascript:;"><img src="img/1.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/71.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/72.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/73.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/74.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/75.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/76.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/77.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/78.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/79.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/80.jpg"></a></li>
+				<li><a href="javascript:;"><img src="img/71.jpg"></a></li>
 			</ul>	
 		</div>
 		<!--轮播点点-->
 		<ul id="lunbodian">
+			<li>●</li>
+			<li>●</li>
+			<li>●</li>
+			<li>●</li>
 			<li>●</li>
 			<li>●</li>
 			<li>●</li>
@@ -266,9 +329,9 @@
 			<div id="rightheng"></div>
 		</div>
 		<!--仅剩时间-->
-		<div id="sheng_time">
-			
-		</div>
+		<div class="time"> 
+	<span id="LeftTime"></span>
+</div>
 		<span id="xuan_number">
 			每件订单最多可购买三件。
 		</span>
@@ -1161,5 +1224,26 @@
 		<!--<script src="js/fanhui.js" type="text/javascript" charset="utf-8"></script>-->
 		<script src="js/two_menu.js" type="text/javascript" charset="utf-8"></script>
 		<!--<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>-->
+		<script type="text/javascript">
+        	function FreshTime(){
+
+    var endtime=new Date("2017/11/20,12:20:12");//结束时间
+    var nowtime = new Date();//当前时间
+    var lefttime=parseInt((endtime.getTime()-nowtime.getTime())/1000); 
+    d=parseInt(lefttime/3600/24);
+    h=parseInt((lefttime/3600)%24);
+    m=parseInt((lefttime/60)%60);
+    s=parseInt(lefttime%60);
+ 
+    document.getElementById("LeftTime").innerHTML="仅剩:" + d+"d:"+h+"h:"+m+"m:"+ s +"s";
+    if(lefttime<=0){
+        document.getElementById("LeftTime").innerHTML="团购已结束";
+        clearInterval(sh);
+    }
+}
+    FreshTime();
+    var sh;
+    sh=setInterval(FreshTime,1000);
+        </script>
 	</body>
 </html>
