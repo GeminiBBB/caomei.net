@@ -33,12 +33,7 @@ odianji.onmouseover=function(){
 odianji.onmouseout=function(){
 	otwoJi_menu.style.display="none";
 }
-odianji10.onmouseover=function(){
-	otwoJi_menu2.style.display="block";
-}
-odianji10.onmouseout=function(){
-	otwoJi_menu2.style.display="none";
-}
+
 //1
 odianji1.onmouseover=function(){
 	op1.style.display="block"
@@ -74,5 +69,10 @@ odianji5.onmouseover=function(){
 odianji5.onmouseout=function(){
 	op5.style.display="none"
 }
-
+odianji10.onmouseover=function(){
+	otwoJi_menu2.style.display="block";
+}
+odianji10.onmouseout=function(){
+	otwoJi_menu2.style.display="none";
+}
 

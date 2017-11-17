@@ -1,5 +1,4 @@
 window.onload = function() {
-	console.log($("#LoutiNav li:not(.last)").length)
 	$("#LoutiNav li:not(.last)").click(function() {
 		$(this).find("span")
 			.addClass("active")

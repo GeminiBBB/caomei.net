@@ -17,7 +17,6 @@ window.onload = function () {
 
 	// 记录定时器的返回值
 	let iTimer = null;
-console.log(oList)
 	// 鼠标移入，显示按钮
 //	oBox.onmouseenter = function () {
 //		clearInterval(iTimer);
